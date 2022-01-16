@@ -20,18 +20,19 @@ export function Navigation({toggle}) {
   const [seen, setSeen] = useState(true);
   const styles3 = seen ? { display: "none" } : { display: "block" };
   //const style3= toggle ? { display: "none"} : { display: "block"};
- 
+  const [navigation,setNavigation] = useState(false);
 
   return (
-    <div className="navigation" id={toggle ? "hidden" : ""}>
-       
+    <div className={navigation ? "navigation active" : "navigation"} id={toggle ? "hidden" : ""}>
+    
+       {console.log("navigation",toggle)}
       <div className="nav_heading">
         <EmojiEmotionsIcon fontSize="large" /> <h3>SB ADMIN2</h3>
       </div>
 
       <div className="dash">
         <SpeedIcon />
-        <Link className="link" to="/">
+        <Link className="link" to="/" >
           <h4 id="board">Dashboard</h4>
         </Link>
       </div>
@@ -163,14 +164,14 @@ export function Navigation({toggle}) {
             
             <p className="list">404 Page</p>
           </Link>
-          <Link className="link" to="/blank">
+          <Link className="link" to="/blank" >
             
             <p className="list">Blank Page</p>
           </Link>
         </div>
         <div className="utilities">
           <StackedBarChartIcon fontSize="small" />
-          <Link className="link" to="/charts">
+          <Link className="link" to="/charts" >
             
             <h4 className="comp_head">Charts </h4>
           </Link>
