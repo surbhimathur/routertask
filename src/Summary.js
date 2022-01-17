@@ -1,8 +1,15 @@
+{
+  /* This is the sub div of dashboard div. It displays projects,color panel,illustrations and development div's.*/
+}
+
 export function Summary() {
   return (
     <div className="summary_box">
+      {/*summary box contains summary_box 1 and 2*/}
       <div className="summary_box1">
+        {/*summary box 1 contains projects and color panel div's*/}
         <div className="projects">
+          {/*project div's*/}
           <p className="project_heading">Projects</p>
           <div className="ptopics server">
             <div className="pheading ">
@@ -58,7 +65,7 @@ export function Summary() {
             </div>
           </div>
         </div>
-
+        {/*color panel div*/}
         <div className="colors">
           <div className="first_color_row">
             <div className="primary">
@@ -98,8 +105,10 @@ export function Summary() {
           </div>
         </div>
       </div>
+      {/*summary box 2 contains illustration and development div's*/}
       <div className="summary_box2">
         <div className="illustrate">
+          {/*illustration div*/}
           <p className="project_heading">Illustrations</p>
           <div className="ill_body">
             <div className="ill_image">
@@ -120,7 +129,7 @@ export function Summary() {
             </div>
           </div>
         </div>
-
+        {/*development div*/}
         <div className="illustrate development">
           <p className="project_heading">Development Approach</p>
           <div className="ill_body">

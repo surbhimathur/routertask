@@ -7,6 +7,9 @@ import ListAltIcon from "@mui/icons-material/ListAlt";
 import {Menu} from "./Menu";
 import { Summary } from "./Summary";
 
+{
+  /* This is the dashboard div . here all pages will be displayed */
+}
 export function Dashboard() {
 
   //const style3= toggle ? { display: "none" } : { display: "block" };
@@ -16,12 +19,12 @@ export function Dashboard() {
     
 
     <div className="dashboard">
-    
+    { /* dashboard heading and generate report button*/}
       <div className="dashboard_header">
         <h1>Dashboard</h1>
         <button ><DownloadIcon /> Generate Report</button>  
       </div>
-
+      { /* here all the data is displayed in brief format*/}
       <div className="notification_box">
         <div className="notbox earnings_monthly">
           <div className="details">
